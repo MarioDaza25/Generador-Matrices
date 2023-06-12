@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/matriz.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+        
+        <h1 class="titulo">ORDENAMIENTO MATRIZ</h1>
+           
+        <form  class="formulario">
+                <h3>TAMAÑO MATRIZ</h3>
+
+                <div class="tamano">
+                    <input type="number" class="input-" placeholder="Número Filas" id="numeroFilas">
+                    <input type="number" class="input-" placeholder="Número Columnas"id="numeroColumnas">
+                </div>
+
+                <h3>Numeros Comprendidos</h3>
+
+                <div class="rango">
+                    <input type="number" class="input-" placeholder="Desde"id="desde">
+                    <input type="number" class="input-" placeholder="Hasta"id="hasta">
+                </div>
+
+                <div class="botones">
+                    <button type="button" class="boton" id="llenar" onclick="agregarCeldas()">LLENAR</button>
+                    <button type="button" class="boton" id="ordenar" onclick="ordenarTabla()">ORGANIZAR</button>
+                </div>
+            
+            </form>
+            <hr>
+        <div class="tablas">
+            <div class="titulos">
+                <h3 class="titulo_h3">MATRIZ ORIGINAL</h3>
+                <h3 class="titulo_h3">MATRIZ ORDENADA</h3>
+            </div>
+            <div class="dostablas">
+                <table class="tabla" id="tabla_original">
+                </table>
+                <table class="tabla" id="tabla_ordenada">
+                
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script defer src="./matrizR.js"></script>
+</body>
+</html>
